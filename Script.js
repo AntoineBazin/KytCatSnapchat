@@ -18,7 +18,7 @@ function Update()
 	if (stretch == 1)
 		intensity += getDeltaTime();
 	else if (stretch == -1)
-		intensity += getDeltaTime();
+		intensity -= getDeltaTime();
 	if (intensity >= 1) {
 		isStretched = true;
 		stretch = 0;
